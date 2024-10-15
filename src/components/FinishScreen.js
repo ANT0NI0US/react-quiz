@@ -22,7 +22,11 @@ export default function FinishScreen() {
         </p>
       </div>
       <p className="highScore">(highScore: {highScore} points)</p>
-      <button className="btn" onClick={() => dispatch({ type: "restart" })}>
+      <button
+        aria-label="restart quiz"
+        className="btn"
+        onClick={() => dispatch({ type: "restart" })}
+      >
         Restart quiz
       </button>
     </>

@@ -9,6 +9,7 @@ export default function Options({ question }) {
     <div className="options">
       {question.options.map((option, index) => (
         <button
+          aria-label="select answer"
           className={`btn btn-option ${index === answer ? "answer" : ""} ${
             hasAnswered
               ? index === question.correctOption
